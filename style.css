@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.coin-box-row {
+    padding: 20px 0;
+}
+
+.coin-box-row .col-md-3 {
+    margin-bottom: 20px;
+
+}
+
+.coin-box {
+    width: 78%;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    text-align: center;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coin-details {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+
+}
+
+.coin-details h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.coin-box span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #797878;
+}
+
+.recharge {
+    margin-top: 20px;
+}
+
+.recharge p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+}
+
+.recharge span {
+    color: rgb(216, 31, 77);
+}
+
+.userName label {
+    display: block;
+    font-size: 14px;
+    color: #494848;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.userName input {
+    border-radius: 6px;
+    color: #797878;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+}
+
+.main-row h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #111;
+}
+
+.total-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.total-box p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+
+.total-box span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #797878;
+}
+
+.recharge-btn button {
+    padding: 8px 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 18%;
+    background-color: #ff2c57;
+    color: #fff;
+}
+
+.recharge-btn button:disabled {
+    cursor: not-allowed;
+    background-color: #e2e2e2;
+
+}
+
+#customInput {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #111;
+    outline: none;
+    text-align: center;
+}
+
+#errorMessage {
+    font-size: 12px;
+}
+
+.modal-body {
+    padding: 15px 25px;
+}
+
+.modal-body-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.modal-body-box h3 {
+    font-size: 14px;
+}
+
+.modal-body-box #modalTotalCoin {
+    font-size: 14px;
+}
+
+.modal-body-box #modalTotalPrice {
+    font-weight: 700;
+}
+
+.modal-body-box #modalUserName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.paymentMethods {
+    padding: 20px 0;
+}
+
+.paymentMethods h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.paymentMethods-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.paymentMehods-footer {
+    font-size: 12px;
+}
+
+.modal-footer button {
+    padding: 4px 15px;
+    background-color: #ff2c57;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    width: 140px;
+}
+
+.modal-lodding-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #49484882;
+    width: 210px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.modal-lodding-box-content p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-dialog {
+    max-width: 700px;
+}
+
+.modal-title {
+    /* font-size: 18px; */
+    font-weight: 700;
+}
+
+.modal-header span {
+    font-size: 10px;
+    color: rgb(11, 138, 138);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainLoadding {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #111;
+}
+
+
+.visaLoding h2 {
+    color: #142651;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.visaLoding button {
+    padding: 8px 15px;
+    background-color: #142651;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+.paymentProsesing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paymentProsesing h3 {
+    color: #111;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.paymentProsesing p {
+    font-size: 16px;
+    color: #494848;
+}
+
+.completed-icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    border-radius: 50px;
+    color: #32a378;
+    margin: 40px 0;
+}
+
+.completed-content-box {
+    margin-bottom: 20px;
+}
+
+.completed-content-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.completed-content-box p {
+    font-size: 14px;
+    color: #494848;
+}
+
+.verify-box {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eeeff085;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+.verify-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left !important;
+}
+
+.verify-box p {
+    font-size: 14px;
+    color: #494848;
+    text-align: left !important;
+
+}
+
+.verify-box a {
+    display: block;
+    margin-top: 15px;
+    color: #ff2c57;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left !important;
+
+}
