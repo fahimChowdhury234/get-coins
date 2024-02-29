@@ -211,6 +211,10 @@ main {
     width: 140px;
 }
 
+.modal-lodding-box-icon img {
+    width: 50%;
+}
+
 .modal-lodding-box {
     position: absolute;
     top: 50%;
@@ -274,11 +278,20 @@ main {
     outline: none;
 }
 
-.paymentProsesing {
+.paymentProsesing,
+.laslodder {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.laslodder img {
+    width: 50%;
+}
+
+input[type='radio'] {
+    accent-color: #ff2c57;
 }
 
 .paymentProsesing h3 {

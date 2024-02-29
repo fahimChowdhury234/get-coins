@@ -259,28 +259,7 @@
 
                            <div class="modal-lodding-box d-none" id="modal-lodding-box">
                               <div class="modal-lodding-box-icon d-flex justify-content-center align-items-center">
-                                 <svg
-                                    version="1.1"
-                                    id="L5"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 100 100"
-                                    enable-background="new 0 0 0 0"
-                                    xml:space="preserve"
-                                    width="60"
-                                 >
-                                    <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
-                                       <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1" />
-                                    </circle>
-                                    <circle fill="#fff" stroke="none" cx="30" cy="50" r="6">
-                                       <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2" />
-                                    </circle>
-                                    <circle fill="#fff" stroke="none" cx="54" cy="50" r="6">
-                                       <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3" />
-                                    </circle>
-                                 </svg>
+                                 <img src="./Animation - 1709239287155.gif" alt="" />
                               </div>
                               <div class="modal-lodding-box-content">
                                  <p>Payment processing please don't close this page</p>
@@ -388,6 +367,9 @@
                </svg>
                <h3>Processing your payment</h3>
                <p>This cloud take a few second</p>
+            </div>
+            <div class="laslodder d-none" id="laslodder">
+               <img src="./Animation - 1709239287155.gif" alt="" />
             </div>
          </div>
       </main>
@@ -505,7 +487,7 @@
             const paymentProcessing = document.getElementById("paymentProcessing");
             const modalLoddingBox = document.getElementById("modal-lodding-box");
             const payNow = document.getElementById("payNow");
-
+            const laslodder = document.getElementById("laslodder");
             const payNowSvg = document.getElementById("payNowSvg");
 
             payNowBtn.addEventListener("click", function () {
@@ -525,9 +507,17 @@
 
                         setTimeout(function () {
                            paymentProcessing.classList.add("d-none");
-                           mainLoading.classList.add("d-none");
-                           modalLoddingBox.classList.add("d-none");
-                           $("#exampleModal2").modal("show");
+                           laslodder.classList.remove("d-none");
+
+                           setTimeout(function () {
+                              laslodder.classList.add("d-none");
+
+                              mainLoading.classList.add("d-none");
+
+                              modalLoddingBox.classList.add("d-none");
+
+                              $("#exampleModal2").modal("show");
+                           }, 1000);
                         }, 3000); // Hide paymentProcessing after 3 seconds
                      }, 3000); // Hide visaLoading after 3 seconds
                   }, 0); // Show mainLoading immediately
