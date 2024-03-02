@@ -392,13 +392,13 @@ input[type=number] {
 }
 
 .modal-footer button {
-    padding: 4px 15px;
+    padding: 6px 15px;
     background-color: #ff2c57;
     color: #fff;
     border-radius: 4px;
     outline: none;
     border: none;
-    width: 140px;
+    width: 96px;
 }
 
 .modal-lodding-box-icon img {
@@ -596,6 +596,10 @@ input[type='radio'] {
 
     .coin-box {
         width: 100%;
+    }
+
+    .userName input {
+        width: 50%;
     }
 
     .recharge-btn button {
